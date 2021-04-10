@@ -1,6 +1,6 @@
 4/10 Saturday
   Topics Covered: Linked lists, singly linked list.
-  Time studied: 2.5 hours
+  Time studied: 3 hours
 
 
 
