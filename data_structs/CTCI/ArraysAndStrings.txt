@@ -1,0 +1,23 @@
+Hash tables
+- Maps keys to values (like python dictionary) for efficient lookup.
+- Sample implementation (array of linked lists)
+  1.) compute the keys hash code, which usually is an int or long. 
+  2.) map the hash code to an index in the array. something like 'hash(key) % array_length'
+  3.) at this index, there is a linked list of keys and values. store the key and value in this index. IMPORTANT: we must use linked lists because of collisions.
+- If the number of collisions is very high, the worst case runtime is O(N), where N is the number of keys. 
+- If good implementation that keeps collisions to minimum, the lookup time is O(1).
+
+ArrayList & Resizable Arrays
+- An array that resizes itself as needed while still providing O(1) access.
+- A typical implementation is that when the array is full, the array doubles in size. Each resizing takes O(n) time, but happens so rarely that its amortized insertion time is O(1).
+
+StringBuilder.py
+- On each concatenation, a new copy of the string is created, and the two strings are copied over, character by character. The first iteration requires us to copy x characters.
+  The second iteration requires copying 2x characters. The third iteration requires 3x, and so on. The total time is O(x + 2x + ... + nx). Reduces to O(xn^2).
+
+Interview questions
+1.1 Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
+isUniqe.py
+
+1.2 Check Permutation: Given two strings, write a method to decide if one is a permutation of the other.
+checkPermutation.py
