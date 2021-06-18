@@ -1,0 +1,10 @@
+Linked Lists
+- A linked list is a data structure that represents a sequence of nodes. In a singly linked
+  list, each node points to the next node. In a doubly linked list, pointers go both ways.
+
+Difference between linked list and arrays
+- A linked list does not provide constant time to access to a 'index'. So that when you need
+  to find the k-th element of a linked list, you need to iterate through k nodes to get there.
+
+Creating a linked list
+LinkedList.py
