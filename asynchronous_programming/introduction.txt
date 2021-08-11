@@ -1,0 +1,7 @@
+Handling I/O operations such as network connections is one of the most expensive tasks
+in a program.
+
+TCP_blocking_echo_server.py
+
+If a client connects to the server successfully without sending any request, it blocks
+others connections.
